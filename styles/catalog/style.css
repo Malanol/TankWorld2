@@ -1,0 +1,130 @@
+
+
+.cart_list {
+    padding: 0;
+    margin: 0;
+}
+
+.cart_element {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_element img {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.cart_element h2 {
+    font-size: 28px;
+    font-family: "Malygin";
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    color:  rgb(70, 70, 70);
+    font-family: "Malygin";
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.input_p {
+    color:  rgb(70, 70, 70);
+    font-family: "Malygin";
+    font-size: 14px;
+    margin-top: 10px;
+    margin-top: auto;
+}
+
+.cart_element input {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    background-color: transparent;
+    font-family: "MalyginRegular";
+}
+
+.cart_element input:focus {
+    outline: none !important;
+}
+
+.order {
+    margin-top: 10px;
+}
+
+.submit_field input {
+    font-family: "MalyginRegular";
+    background-color: rgb(0, 117, 255);
+    color: white;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.sort_field {
+    padding: 0;
+    color:  rgb(70, 70, 70);
+    font-family: "Malygin";
+    font-size: 14px;
+}
+
+.sort_field label {
+    margin-left: 10px;
+    color: rgb(130, 130, 130);
+}
+
+.sort_field p {
+    margin-bottom: 10px;
+}
+
+.search_field {
+    padding: 0;
+}
+
+.search_field input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: transparent;
+    font-family: "MalyginRegular";
+    font-size: 14px;
+}
+
+.order-stat h2 {
+    font-size: 18px;
+    font-family: "Malygin";
+    font-weight: bold;
+}
+
+.order_point {
+    color:  rgb(70, 70, 70);
+    font-family: "MalyginRegular";
+    font-size: 14px;
+}
+
+.order_value {
+    margin-left: 5px;
+    color:  rgb(100, 100, 100);
+    font-family: "MalyginRegular";
+    font-size: 14px;
+}
+
+.order-stat li {
+    color:  rgb(70, 70, 70);
+    font-family: "MalyginRegular";
+    font-size: 14px;
+}
