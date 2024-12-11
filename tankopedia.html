@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="./styles/fonts.css" rel="stylesheet">
+        <link href="./styles/main_style.css" rel="stylesheet">
+        <link href="./styles/index/style.css" rel="stylesheet">
+        <link href="./styles/content_style.css" rel="stylesheet">
+        <link href="./styles/tankopedia/style.css" rel="stylesheet">
+        <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src= "./scripts/scroll.js"></script> 
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <title>Танкопедия</title>
+    </head>
+    <body>
+        <div class="container-fluid p-0 wrapper align-items-center">
+            <div class=" button-container">
+                <button id="button-up">
+                    <img src="./images/arrow.png">
+                </button>
+            </div>
+            <div class=" button-container">
+                <button id="button-up">
+                    <img src="./images/arrow.png">
+                </button>
+            </div>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="main_icon.png" height="40">
+                    </a>
+
+                    <button class="navbar-toggler ms-auto"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#menuNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse flex-grow-0" id="menuNavbar">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./catalog.html">
+                                    Каталог танков
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./tankopedia.html">
+                                    Танкопедия
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tankopedia.html#best_tanks">
+                                    Лучшие танки 2024
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="https://lesta.ru/ru" target="_blank">
+                                    <img src="./images/lesta.webp">
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="https://worldoftanks.com/" target="_blank">
+                                    <img src="./images/wg.png">
+                                </a>
+                            </li>
+                            <li class="nav-item d-sm-block d-lg-none">
+                                <a class="nav-link" href="https://lesta.ru/ru" target="_blank">
+                                    <img src="./images/lesta.webp">
+                                    <span>Официальный сайт Lesta</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-sm-block d-lg-none">
+                                <a class="nav-link" href="https://worldoftanks.com/" target="_blank">
+                                    <img src="./images/wg.png">
+                                    <span>Официальный сайт Wargaming</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-xl content">
+                <div class="row page_title">
+                    <h1>Танкопедия</h1>
+                    <p class="small_text">Информация о танках и картах</p>
+                    <p class="small_text date">Последнее обновлене: 10.12.2024 23:41</p>
+                    <button class="btn_list"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#sections">
+                            Содержимое страницы
+                    </button>
+                    <div class="collapse navbar-collapse" id="sections">
+                        <ul class="section_list">
+                            <li>
+                                <a href="./tankopedia.html#tanks_X">Танки X уровня</a>
+                                <button data-bs-toggle="collapse" data-bs-target="#tanks_X_list">Список</button>
+                                <ul class="collapse navbar-collapse" id="tanks_X_list">
+                                    <li><a href="./tankopedia.html#first_tank">Объект 261</a></li>
+                                    <li><a href="./tankopedia.html#second_tank">ИС-7</a></li>
+                                    <li><a href="./tankopedia.html#third_tank">Leopard</a></li>
+                                    <li><a href="./tankopedia.html#fourth_tank">Strv 103B</a></li>
+                                    <li><a href="./tankopedia.html#fifth_tank">Type 71</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./tankopedia.html#best_tanks">Лучшие танки 2024</a>
+                                <button data-bs-toggle="collapse" data-bs-target="#best_tanks_list">Список</button>
+                                <ul class="collapse navbar-collapse" id="best_tanks_list">
+                                    <li><a href="./tankopedia.html#best_first_tank">КВ-2</a></li>
+                                    <li><a href="./tankopedia.html#best_second_tank">ИС-3</a></li>
+                                    <li><a href="./tankopedia.html#best_third_tank">Объект 430У</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row page_content">
+                    <h1 class="section_name" id="tanks_X">Некоторые танки X уровня</h1>
+                    <div class="row section_content_elem" id="first_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/Obj261.jpg">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Объект 261</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/ussr.png">
+                                    <p>СССР</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/arta.png">
+                                        <p>САУ</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>273 000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>6 100 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>180 мм Б-1-П</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>800 / 1000 / 520</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>45 / 56 / 334</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>1.88 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>1 504</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.59</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>4.5 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section_content_elem" id="second_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/is-7.webp">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">ИС-7</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/ussr.png">
+                                    <p>СССР</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/tt.png">
+                                        <p>Тяжёлый танк</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>191 500</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>6 100 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>130 мм С-70</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>490 / 490 / 640</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>250 / 303 / 68</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>4.38 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>2 146</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.4</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>2.9 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section_content_elem" id="third_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/leopard.png">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Leopard</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/ger.png">
+                                    <p>Германия (ФРГ)</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/st.png">
+                                        <p>Средний танк</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>216 000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>6 100 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>10,5 cm Bordkanone L7A3</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>420 / 420 / 510</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>278 / 323 / 105</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>6.45 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>2 709</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.29</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>1.7 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section_content_elem" id="fourth_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/strv103b.jpg">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Strv 103B</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/swe.png">
+                                    <p>Швеция</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/pt.png">
+                                        <p>ПТ-САУ</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>240 800</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>6 100 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>10,5 cm kan strv 103 L/62</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>390 / 390 / 480</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>308 / 350 / 53</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>8.57 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>3 342</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.3</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс в осадном режиме: </b>0.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>3 с</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения в осадном режиме: </b>1 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section_content_elem" id="fifth_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/type71.webp">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Type 71</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/jap.png">
+                                    <p>Япония</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/tt.png">
+                                        <p>Тяжёлый танк</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>232 000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>6 100 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>120 mm Gun Type 71</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>420 / 420 / 540</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>260 / 330 / 60</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>6 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>2 529</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.42</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>1.92 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row page_content">
+                    <h1 class="section_name" id="best_tanks">Лучшие танки 2024</h1>
+                    <div class="best_tanks_disclaimer">
+                        <p>В данном разделе собраны 5 самых интересных, фановых и приятных машин в игре по версии админа и сотен тысяч игроков<p>
+                        <p>Для того, чтобы попасть в этот список, машина должна:</p>
+                        <ul>
+                            <li>Быть фановой, т.е:
+                                <ul>
+                                    <li>Иметь приятный геймплей</li>
+                                    <li>Быть простой в реализации</li>
+                                    <li>Обладать некой отличительной особенностью, что делаёт её особенной</li>
+                                </ul>
+                            </li>
+                            <li>Пользоваться популярностью у широких масс игроков</li>
+                            <li>Быть простой для получения</li>
+                        </ul>
+                        <p>Итак, вот список:</p>
+                    </div>
+                    <div class="row section_content_elem" id="best_first_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/kv-2.jpeg">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">КВ-2</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/ussr.png">
+                                    <p>СССР</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/tt.png">
+                                        <p>Тяжёлый танк</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>26 700</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>920 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>152 мм М-10</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>700 / 700 / 910</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>110 / 136 / 86</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>2.5 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>1 750</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.6</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>3.8 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section_content_elem" id="best_second_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/is3.webp">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">ИС-3</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/ussr.png">
+                                    <p>СССР</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/tt.png">
+                                        <p>Тяжёлый танк</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>77 000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>2 568 500</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>122 мм БЛ-9</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>390 / 390 / 530</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>225 / 265 / 68</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>4.51 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>1 759</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.46</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>3.4 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section_content_elem" id="best_third_tank">
+                        <div class="col-lg-3 p-0 section_content_image">
+                            <img src="./images/tanks/obj430.jpg">
+                        </div>
+                        <div class="col-lg-5 p-0 section_content_maininfo mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Объект 430У</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title">Нация</td>
+                                  <td class="info_cell_info">
+                                    <img class="flag" src="./images/ussr.png">
+                                    <p>СССР</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Класс техники</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/st.png">
+                                        <p>Средний танк</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость исследования</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/xp.png">
+                                        <p>287 000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title">Стоимость покупки</td>
+                                    <td class="info_cell_info">
+                                        <img class="tank_class" src="./images/money.png">
+                                        <p>6 100 000</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 p-0 section_content_characteristrics mt-3 mt-lg-0">
+                            <table>
+                                <tr>
+                                  <td class="tank_title" colspan="2">Характеристики</td>
+                                </tr>
+                                <tr>
+                                  <td class="info_cell_title"><b>Орудие: </b>122 мм М62-Т2У</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Урон: </b>440 / 440 / 530</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Бронепробитие: </b>252 / 340 / 68</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Скросторельность: </b>5.88 выстрелов / мин</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>ДПМ: </b>2 587</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Разброс: </b>0.4</td>
+                                </tr>
+                                <tr>
+                                    <td class="info_cell_title"><b>Время сведения: </b>2.3 с</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer p-4">
+                <div class="container container-footer">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 footer_image h-100">
+                            <img src="./images/icon2.png">
+                            <p>TankWorld</p>
+                        </div>
+                        <div class="col-md-3 col-xl-2 footer_info h-100">
+                            <h2>О сайте</h2>
+                            <hr>
+                            <p>Данный сайт был создан в рамках проекта
+                            по дисциплине "Основы web-технологий"</p>
+                        </div>
+                        <div class="col-md-3 col-xl-2 footer_info h-100">
+                            <h2>Связаться с автором</h2>
+                            <hr>
+                            <p>Email: lonalam@yandex.ru</p>
+                            <a href="https://t.me/malanol" target="_blank"><img src="./images/telegram_icon4.png"></a>
+                            <a href="https://vk.com/malygin_anton" target="_blank"><img src="./images/vk.png"></a>
+                        </div>
+                    </div>
+                    <div class="row text-center footer-bottom">
+                        <p>Малыгин Антон 2024</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

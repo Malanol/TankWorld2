@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="./styles/fonts.css" rel="stylesheet">
+        <link href="./styles/main_style.css" rel="stylesheet">
+        <link href="./styles/index/style.css" rel="stylesheet">
+        <link href="./styles/content_style.css" rel="stylesheet">
+        <link href="./styles/news/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src= "./scripts/scroll.js"></script> 
+        <title>Новости</title>
+    </head>
+    <body>
+        <div class="container-fluid p-0 wrapper">
+            <div class=" button-container">
+                <button id="button-up">
+                    <img src="./images/arrow.png">
+                </button>
+            </div>
+            <div class=" button-container">
+                <button id="button-up">
+                    <img src="./images/arrow.png">
+                </button>
+            </div>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="main_icon.png" height="40">
+                    </a>
+
+                    <button class="navbar-toggler ms-auto"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#menuNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse flex-grow-0" id="menuNavbar">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./news.html">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./catalog.html">
+                                    Каталог танков
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tankopedia.html">
+                                    Танкопедия
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tankopedia.html#best_tanks">
+                                    Лучшие танки 2024
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="https://lesta.ru/ru" target="_blank">
+                                    <img src="./images/lesta.webp">
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="https://worldoftanks.com/" target="_blank">
+                                    <img src="./images/wg.png">
+                                </a>
+                            </li>
+                            <li class="nav-item d-sm-block d-lg-none">
+                                <a class="nav-link" href="https://lesta.ru/ru" target="_blank">
+                                    <img src="./images/lesta.webp">
+                                    <span>Официальный сайт Lesta</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-sm-block d-lg-none">
+                                <a class="nav-link" href="https://worldoftanks.com/" target="_blank">
+                                    <img src="./images/wg.png">
+                                    <span>Официальный сайт Wargaming</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-xl content">
+                <div class="row page_title">
+                    <h1>Новости</h1>
+                    <p class="small_text">Последние новости игры и сайта</p>
+                    <p class="small_text date">Последнее обновлене: 05.11.2024 21:26</p>
+                </div>
+                <div class="row page_content">
+                    <div class="row news_elem"> 
+                        <div class="col-sm-4 col-md-3 news_image">
+                            <img src="./images/sturm.jpg" title="Объект 261/5">
+                            <p>Объект 261/5</p>
+                        </div>
+                        <div class="col-12 col-sm-8 col-md-9 news_text news_text_big d-none d-sm-block">
+                            <h1>Штурм-САУ - быть!</h1>
+                            <p class="small_text">Новость добавлена: 05.11.2024 01:57</p>
+                            <p class="news_text_content">
+                                Скоро в игру будет добавлен новый класс  добавлен новый класс  добавлен новый класс влен новый класс техники - Штурм-САУ!
+                            </p>
+                            <p class="news_text_content">
+                                Как заявляют разработчики: Штурм-САУ - артиллерия ближнего боя, обладающая следующими особенностями:
+                            </p>
+                            <ol>
+                                <li>За счёт отсутствия механики оглушения, данные машины наносят больше урона, чем обычная артиллерия</li>
+                                <li>Дальность стрельбы существенно ограничена. Следовательно, на данных машинах придётся постоянно
+                                    перемещаться
+                                </li>
+                                <li>Машины будут обладать крепкой лобовой бронёй, что позволит им находится в центре событий
+                                </li>
+                            </ol>
+                            <p class="news_text_content">
+                                О дате введения данных машин в игру пока что не сообщается
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-8 col-md-9 news_text news_text_small d-xs-block d-sm-none">
+                            <h1>Штурм-САУ - быть!</h1>
+                            <p class="small_text">Новость добавлена: 05.11.2024 01:57</p>
+                            <p class="news_text_content">
+                                Скоро в игру будет добавлен новый класс  добавлен новый класс  добавлен новый класс влен новый класс техники - Штурм-САУ!
+                            </p>
+                            <p class="news_text_content">
+                                Как заявляют разработчики: Штурм-САУ - артиллерия ближнего боя, обладающая следующими особенностями:
+                            </p>
+                            <ol>
+                                <li>За счёт отсутствия механики оглушения, данные машины наносят больше урона, чем обычная артиллерия</li>
+                                <li>Дальность стрельбы существенно ограничена. Следовательно, на данных машинах придётся постоянно
+                                    перемещаться
+                                </li>
+                                <li>Машины будут обладать крепкой лобовой бронёй, что позволит им находится в центре событий
+                                </li>
+                            </ol>
+                            <p class="news_text_content">
+                                О дате введения данных машин в игру пока что не сообщается
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row news_elem"> 
+                        <div class="col-sm-4 col-md-3 news_image">
+                            <img src="./images/alligator.jpeg" title="FV205b Alligator">
+                            <p>FV205b Alligator</p>
+                        </div>
+                        <div class="col-12 col-sm-8 col-md-9 news_text news_text_big d-none d-sm-block">
+                            <h1>Новая премиум ПТ IX уровня в Сборочном цехе</h1>
+                                <p class="small_text">Новость добавлена: 05.11.2024 01:41</p>
+                                <p class="news_text_content">
+                                    В игре вновь старует сборочный цех. В этот раз игроки смогут собрать у себя в ангаре отличную
+                                    британскую премиум ПТ IX-уровня - <b>FV205b Alligator</b>.
+                                </p>
+                                <p class="news_text_content">
+                                    Особенности нового Сборочного цеха:
+                                </p>
+                                <ul>
+                                    <li>Событие доступно с 4 ноября 09:00 (МСК) по 11 декабря 03:00 (МСК)</li>
+                                    <li>Для сборки необходимо 26 жетонов</li>
+                                    <li>Все жетоны можно получить за выполнение боевых задач, т.е. донатить не придётся!</li>
+                                    <li>Вводится магазин сборочного цеха</li>
+                                    <li>И много другое!</li>
+                                </ul>
+                                <p class="news_text_content">
+                                    Более подробную информацию можно узнать на официальном сайте Lesta: 
+                                    <a href="https://tanki.su/ru/anons-armory-yard/" target="_blank"><img src="./images/lesta.webp"></a>
+                                </p>
+                        </div>
+                        <div class="col-12 col-sm-8 col-md-9 news_text news_text_small d-xs-block d-sm-none">
+                            <h1>Новая премиум ПТ IX уровня в Сборочном цехе</h1>
+                            <p class="small_text">Новость добавлена: 05.11.2024 01:41</p>
+                            <p class="news_text_content">
+                                В игре вновь старует сборочный цех. В этот раз игроки смогут собрать у себя в ангаре отличную
+                                британскую премиум ПТ IX-уровня - <b>FV205b Alligator</b>.
+                            </p>
+                            <p class="news_text_content">
+                                Особенности нового Сборочного цеха:
+                            </p>
+                            <ul>
+                                <li>Событие доступно с 4 ноября 09:00 (МСК) по 11 декабря 03:00 (МСК)</li>
+                                <li>Для сборки необходимо 26 жетонов</li>
+                                <li>Все жетоны можно получить за выполнение боевых задач, т.е. донатить не придётся!</li>
+                                <li>Вводится магазин сборочного цеха</li>
+                                <li>И много другое!</li>
+                            </ul>
+                            <p class="news_text_content">
+                                Более подробную информацию можно узнать на официальном сайте Lesta 
+                                <a href="https://tanki.su/ru/anons-armory-yard/" target="_blank">официальном сайте Lesta</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row news_elem"> 
+                        <div class="col-sm-4 col-md-3 news_image">
+                            <img src="./images/main.jpg" title="Добро пожаловать!">
+                            <p>Добро пожаловать!</p>
+                        </div>
+                        <div class="col-12 col-sm-8 col-md-9 news_text news_text_big d-none d-sm-block">
+                            <h1>Всем привет!</h1>
+                                <p class="small_text">Новость добавлена: 05.11.2024 01:30</p>
+                                <p class="news_text_content">
+                                    Сайт родился! Добро пожаловать!
+                                </p>
+                        </div>
+                        <div class="col-12 col-sm-8 col-md-9 news_text news_text_small d-xs-block d-sm-none">
+                            <h1>Всем привет!</h1>
+                                <p class="small_text">Новость добавлена: 05.11.2024 01:30</p>
+                                <p class="news_text_content">
+                                    Сайт родился! Добро пожаловать!
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer p-4">
+                <div class="container container-footer">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 footer_image h-100">
+                            <img src="./images/icon2.png">
+                            <p>TankWorld</p>
+                        </div>
+                        <div class="col-md-3 col-xl-2 footer_info h-100">
+                            <h2>О сайте</h2>
+                            <hr>
+                            <p>Данный сайт был создан в рамках проекта
+                            по дисциплине "Основы web-технологий"</p>
+                        </div>
+                        <div class="col-md-3 col-xl-2 footer_info h-100">
+                            <h2>Связаться с автором</h2>
+                            <hr>
+                            <p>Email: lonalam@yandex.ru</p>
+                            <a href="https://t.me/malanol" target="_blank"><img src="./images/telegram_icon4.png"></a>
+                            <a href="https://vk.com/malygin_anton" target="_blank"><img src="./images/vk.png"></a>
+                        </div>
+                    </div>
+                    <div class="row text-center footer-bottom">
+                        <p>Малыгин Антон 2024</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
