@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="./styles/fonts.css" rel="stylesheet">
+        <link href="./styles/main_style.css" rel="stylesheet">
+        <link href="./styles/index/style.css" rel="stylesheet">
+        <link href="./styles/content_style.css" rel="stylesheet">
+        <link href="./styles/catalog/style.css" rel="stylesheet">
+        <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src= "./scripts/catalog/script.js"></script> 
+        <script src= "./scripts/scroll.js"></script> 
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <title>Каталог танков</title>
+    </head>
+    <body>
+        <div class="container-fluid p-0 wrapper align-items-center">
+            <div class=" button-container">
+                <button id="button-up">
+                    <img src="./images/arrow.png">
+                </button>
+            </div>
+            <div class=" button-container">
+                <button id="button-up">
+                    <img src="./images/arrow.png">
+                </button>
+            </div>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="main_icon.png" height="40">
+                    </a>
+
+                    <button class="navbar-toggler ms-auto"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#menuNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse flex-grow-0" id="menuNavbar">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./news.html">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./catalog.html">
+                                    Каталог танков
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tankopedia.html">
+                                    Танкопедия
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tankopedia.html#best_tanks">
+                                    Лучшие танки 2024
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="https://lesta.ru/ru" target="_blank">
+                                    <img src="./images/lesta.webp">
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="https://worldoftanks.com/" target="_blank">
+                                    <img src="./images/wg.png">
+                                </a>
+                            </li>
+                            <li class="nav-item d-sm-block d-lg-none">
+                                <a class="nav-link" href="https://lesta.ru/ru" target="_blank">
+                                    <img src="./images/lesta.webp">
+                                    <span>Официальный сайт Lesta</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-sm-block d-lg-none">
+                                <a class="nav-link" href="https://worldoftanks.com/" target="_blank">
+                                    <img src="./images/wg.png">
+                                    <span>Официальный сайт Wargaming</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-xl content">
+                <div class="row page_title">
+                    <h1>Каталог танков</h1>
+                    <p class="small_text">Лучшие танки этой игры</p>
+                    <p class="small_text date">Последнее обновлене: 03.12.2024 23:54</p>
+                </div>
+                <div class="row page_content">
+                    <div class="search_field">
+                        <input type="text" placeholder="Найти танк по названию или описанию" id="search_input">
+                    </div>
+                    <div class="sort_field">
+                        <p>Сортировка по:</p>
+                        <input type="radio" class="sort_button" id="name_sort_1" name="sort" value="name_1"><label for="name_sort_1">Названию (от А до Я)</label><br>
+                        <input type="radio" class="sort_button" id="name_sort_2" name="sort" value="name_2"><label for="name_sort_2">Названию (от Я до А)</label><br>
+                        <input type="radio" class="sort_button" id="price_sort_1" name="sort" value="price_1"><label for="price_sort_1">Стоимости (сначала дороже)</label><br>
+                        <input type="radio" class="sort_button" id="price_sort_2" name="sort" value="price_2"><label for="price_sort_2">Стоимости (сначала дешевле)</label><br>
+                    </div>
+                    <form action="https://www.bing.com/search?" class="p-0" id="UserEnter" name="UserEnter" target="_blank">
+                        <input name="q" type="hidden" value="search">
+                        <ul class="row cart_list" id="shopping_cart">
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">WZ-120G FT</h2>
+                                <img src="./images/tank1.jpeg">
+                                <p class="description">Машина, которая позволит уверенно чувствовать себя в любом бою, ведь она обладает удачным сочетанием характеристик: отличным уроном в минуту, хорошей маскировкой и достойной динамикой.</p>
+                                
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 2769 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="0">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">T54 Heavy Tank</h2>
+                                <img src="./images/tank2.jpeg">
+                                <p class="description">Силуэт сразу выдаёт в этой машине «американца», что наводит на мысли о хороших углах склонения орудия. И они не просто хорошие, а шикарные! 12 град. позволят вам с лёгкостью использовать любой бугорок на местности в свою пользу.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 2850 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="1">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">leKpz M 41 90 mm</h2>
+                                <img src="./images/tank3.jpeg">
+                                <p class="description">Премиум танк VIII уровня leKpz M 41 90 mm — немецкий вариант модернизации лёгкого танка США Walker Bulldog. Машина прекрасно подойдёт для разведки и рейдов по тылам противника, чему способствуют отличные ходовые качества, хороший обзор и скорострельная 90-мм пушка.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1599 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="2">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">Centurion Mk. 5/1</h2>
+                                <img src="./images/tank4.jpeg">
+                                <p class="description">Centurion Mk. 5/1 RAAC — британский средний премиум танк VIII уровня. Минутку, точно британский? Такой вопрос может возникнуть из-за непривычного окраса машины, выделяющего её среди другой техники этой нации. Всё верно. Дело в том, что модель выполнена в базовом цвете танков Австралийского корпуса во Вьетнаме и воспроизводит их внешний вид.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1755 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="3">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">Panzer 58</h2>
+                                <img src="./images/tank6.jpeg">
+                                <p class="description">Машина проектировалась в Швейцарии уже после Второй мировой войны, поэтому имеет современную обтекаемую форму. Боевые характеристики Panzer 58 заслуживают внимания: отличная 90-мм пушка, хорошая подвижность и неплохой обзор. Добавьте сюда угол склонения орудия в 10 градусов — и получите джентльменский набор любителя средних танков</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1155 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="4">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">T25 Pilot Number 1</h2>
+                                <img src="./images/tank5.jpeg">
+                                <p class="description">Проект артиллерийско-технической службы сухопутных войск США на базе серийного танка Т23 с 90-мм пушкой и усиленным бронированием представлен в игре как T25 Pilot Number 1 — американский средний премиум танк VIII уровня</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1680 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="5">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">Skoda T 27</h2>
+                                <img src="./images/tank7.jpeg">
+                                <p class="description">Чехословацкий средний премиум танк VIII уровня.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1250 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="6">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">M-IV-Y</h2>
+                                <img src="./images/tank8.jpeg">
+                                <p class="description">M-IV-Y — американский тяжёлый премиум танк VIII уровня.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1755 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="7">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">Кировец-1</h2>
+                                <img src="./images/tank9.jpeg">
+                                <p class="description">По внешнему виду, характеристикам и геймплею он напоминает легендарный ИС-3. Кировец-1 оборудован мощным, пусть и не слишком точным орудием. Кроме того, у него неплохая динамика, а ещё рациональные углы наклона брони. Оптимальной тактикой игры на этой машине станет навязывание противнику боя на ближней дистанции.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1850 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="8">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">Strv 81</h2>
+                                <img src="./images/tank10.jpeg">
+                                <p class="description">Strv 81 — шведский средний премиум танк VIII уровня.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1950 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="9">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">GSOR 1010 FB</h2>
+                                <img src="./images/tank11.jpeg">
+                                <p class="description">Колёсная база, приличная скорость и отличное орудие. То, что нужно, чтобы оперативно занять снайперскую позицию и отработать по застигнутому врасплох противнику.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 1655 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="10">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 cart_element m-0">
+                                <h2 class="tank-name">Chieftain/T95</h2>
+                                <img src="./images/tank12.jpeg">
+                                <p class="description">Хорошо бронированная рикошетная башня (до 254 мм во лбу) и комфортный угол склонения орудия (-10 град.) делают «британца» настоящим мастером игры «от рельефа». Только держите в памяти, что у вас также имеется командирская башенка, которую лучше не превращать в неподвижную мишень, удобную для противника.</p>
+                                <div class="input_p">
+                                    <p class="description"><b>Цена:</b> 2399 ₽</p>
+                                    <input type="hidden" name="vendor_code" value="11">
+                                    <p class="order">Заказать (кол-во):<input type="number" name="amount" value="0" min="0"></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="order-stat">
+                            <h2>Корзина:</h2>
+                            <p class="order_point">Всего танков:<label class="order_value">0</label></p>
+                            <p class="order_point">Общая сумма покупки:<label class="order_value">0 ₽</label></p>
+                            <p class="order_point" style="margin-top: 10px;">Из них:</p>
+                            <ul id="order-list">
+                                <li>Пока что ничего не добавлено</li>
+                            </ul>
+                        </div>
+                        <div class="row submit_field justify-content-center">
+                            <input type="submit" value="Купить" class="col-12 col-md-3" id="submit_button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer p-4">
+                <div class="container container-footer">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 footer_image h-100">
+                            <img src="./images/icon2.png">
+                            <p>TankWorld</p>
+                        </div>
+                        <div class="col-md-3 col-xl-2 footer_info h-100">
+                            <h2>О сайте</h2>
+                            <hr>
+                            <p>Данный сайт был создан в рамках проекта
+                            по дисциплине "Основы web-технологий"</p>
+                        </div>
+                        <div class="col-md-3 col-xl-2 footer_info h-100">
+                            <h2>Связаться с автором</h2>
+                            <hr>
+                            <p>Email: lonalam@yandex.ru</p>
+                            <a href="https://t.me/malanol" target="_blank"><img src="./images/telegram_icon4.png"></a>
+                            <a href="https://vk.com/malygin_anton" target="_blank"><img src="./images/vk.png"></a>
+                        </div>
+                    </div>
+                    <div class="row text-center footer-bottom">
+                        <p>Малыгин Антон 2024</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
